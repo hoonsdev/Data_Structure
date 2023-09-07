@@ -1,4 +1,4 @@
-class Queue {
+export class Queue {
   arr = [];
 
   enqueue(value) {

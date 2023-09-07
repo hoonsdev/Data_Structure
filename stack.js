@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
   arr = [];
   // 연결 리스트로 구현해보기 -> tail 필요
 
