@@ -6,9 +6,12 @@ function bfs(tree) {
   const queue = new Queue();
   queue.enqueue(tree.root);
   while (queue.length > 0) {
+    // 큐가 빌 때 까지
     const node = queue.dequeue();
+    // 디큐한 노드를 할당
     console.log(node.value);
     if (node.left) {
+      // 왼팔 있으면 왼팔 큐에 삽입
       queue.enqueue(node.left);
     }
     if (node.right) {
